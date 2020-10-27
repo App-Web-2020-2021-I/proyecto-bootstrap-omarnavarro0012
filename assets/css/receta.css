@@ -2,5 +2,5 @@ body{
     background-image: url("../img/fondo18.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position-y: 36%; */
+    background-position-y: 36%;
 }
