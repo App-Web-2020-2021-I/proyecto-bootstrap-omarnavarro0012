@@ -75,19 +75,20 @@
     </nav>
     <!-- quitar el borde de la derecha por que se recorre la pantalla. -->
     
-    <div class="container-fluid w-100 row mt-1">
+    <div class="container-fluid w-100 row mt-1 justify-content-center">
         <!-- navegador paises -->
         
-        <div class="estados col-2">
+       <!--  <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 text-center justify-content-start">
+            <h1 class="display5">Estados</h1>
+        </div> -->
+
+        <div class="estados col-xl-2 col-lg-2 col-md-2 col-sm-12 p-0 justify-content-sm-center">
+            <a class="tituloColapsado navbar-brand" href="">
+                <h1 id="tituloEstados" class="display-5 font-italic">Estados</h1>
+            </a>
             <nav id="navbar" class="navestados navbar navbar-light">
-                <a class="tituloColapsado navbar-brand " href="">
-                    <h1 id="tituloEstados" class="display- font-italic">Estados</h1>
-                </a>
-                
-                <button class="botonColapsado btn btn-primary" type="button" data-toggle="collapse" data-target="#estados" aria-expanded="false" aria-controls="collapse">
-                    Estados
-                </button>
-                <nav class="navestados nav nav-pills flex-column collapse" id="estados">
+                 
+                <nav class="navestados nav nav-pills flex-column" id="estados">
                     <a class="estado nav-link " name="Aguascalientes" href="recetas.html" method="post">Aguascalientes</a>
                     <a class="estado nav-link " name="BajaCa"         href="recetas.html" >Baja California </a>
                     <a class="estado nav-link " name="BajaSur"        href="recetas.html" >Baja California Sur</a>
@@ -122,10 +123,50 @@
                     <a class="estado nav-link " name="Zacatecas"      href="recetas.html">Zacatecas </a>
                 </nav>
                 
-        </div>
+        </div> 
+
+        <div class="estadosDrop dropdown dropright col-md-12 m-3">
+            <button class="botonColapsado btn btn-outline-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Estados
+            </button>
+            <div class="dropEstados dropdown-menu overflow-auto" aria-labelledby="dropdownMenuButton">
+                <a class="estado nav-link " name="Aguascalientes" href="recetas.html" method="post">Aguascalientes</a>
+                <a class="estado nav-link " name="BajaCa"         href="recetas.html" >Baja California </a>
+                <a class="estado nav-link " name="BajaSur"        href="recetas.html" >Baja California Sur</a>
+                <a class="estado nav-link " name="Campeche"       href="recetas.html" >Campeche</a>
+                <a class="estado nav-link " name="Chiapas"        href="recetas.html" >Chiapas </a>
+                <a class="estado nav-link " name="Chihuahua"      href="recetas.html"  >Chihuahua </a>
+                <a class="estado nav-link " name="CDMX"           href="recetas.html" >Ciudad de México </a>
+                <a class="estado nav-link " name="Coahuila"       href="recetas.html" >Coahuila </a>
+                <a class="estado nav-link " name="Colima"         href="recetas.html" >Colima</a>
+                <a class="estado nav-link " name="Durango"        href="recetas.html">Durango </a>
+                <a class="estado nav-link " name="EDMX"           href="recetas.html">Estado de México </a>
+                <a class="estado nav-link " name="Guanajuato"     href="recetas.html">Guanajuato </a>
+                <a class="estado nav-link " name="Guerrero"       href="recetas.html">Guerrero </a>
+                <a class="estado nav-link " name="Hidalgo"        href="recetas.html">Hidalgo </a>
+                <a class="estado nav-link " name="Jalisco"        href="recetas.html">Jalisco </a>
+                <a class="estado nav-link " name="Michoacan"      href="recetas.html">Michoacán </a>
+                <a class="estado nav-link " name="Morelos"        href="recetas.html">Morelos </a>
+                <a class="estado nav-link " name="Nayarit"        href="recetas.html">Nayarit </a>
+                <a class="estado nav-link " name="NuevoLeon"      href="recetas.html">Nuevo León </a>
+                <a class="estado nav-link " name="Oaxaca"         href="recetas.html">Oaxaca </a>
+                <a class="estado nav-link " name="Puebla"         href="recetas.html">Puebla </a>
+                <a class="estado nav-link " name="Queretaro"      href="recetas.html">Querétaro </a>
+                <a class="estado nav-link " name="Quintanaroo"    href="recetas.html">Quintana Roo </a>
+                <a class="estado nav-link " name="SanLuis"        href="recetas.html">San Luis Potosí </a>
+                <a class="estado nav-link " name="Sinaloa"        href="recetas.html">Sinaloa </a>
+                <a class="estado nav-link " name="Sonora"         href="recetas.html">Sonora </a>
+                <a class="estado nav-link " name="Tabasco"        href="recetas.html">Tabasco </a>
+                <a class="estado nav-link " name="Tamaulipas"     href="recetas.html">Tamaulipas </a>
+                <a class="estado nav-link " name="Tlaxcala"       href="recetas.html">Tlaxcala </a>
+                <a class="estado nav-link " name="Veracruz"       href="recetas.html">Veracruz </a>
+                <a class="estado nav-link " name="Yucatan"        href="recetas.html">Yucatán </a>
+                <a class="estado nav-link " name="Zacatecas"      href="recetas.html">Zacatecas </a>
+            </div>
+        </div> 
 
         <!-- carrusel -->
-        <div class="carrusel col-10 ">
+        <div class="carrusel col-xl-10 col-lg-9 col-md-8 col-sm-12 ml-2">
             <div class="tarjeta card text-center" >
                 <div class="card-header m-0 p-0">
                     <h1 id="TituloComeMex" class="display-4 text-lg-center font-italic m-0" >COME MEXICO</h1>
