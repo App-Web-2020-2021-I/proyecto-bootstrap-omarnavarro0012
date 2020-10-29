@@ -66,10 +66,21 @@ body {
         height: 0rem;
     }
 }
-@media screen and (min-width : 425px){
+@media (max-width:768px) and (min-width : 425px){
     .navbar{
         flex-wrap: initial;
     }
+    .tituloColapsado{
+        visibility: hidden;
+        width: 0rem;
+        height: 0rem;
+    }
+}
+@media (max-width:425px) and (min-width : 1px){
+    .navbar{
+        flex-wrap: initial;
+    }
+    
     .tituloColapsado{
         visibility: hidden;
         width: 0rem;
