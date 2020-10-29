@@ -19,7 +19,6 @@ body {
 
 .carrusel{
     height: 570px;
-    
 }
 
 .carrusel .tarjeta{
@@ -31,7 +30,7 @@ body {
 .estados
 {
     overflow: scroll;
-    height: 590px;
+    height: 570px;
 }
 
 .estados::-webkit-scrollbar {
@@ -55,7 +54,14 @@ body {
     color: deeppink;
     text-decoration: underline;
 }
+.estadosDrop{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    display: none;
+}
 
+/*xl y lg  */
 @media screen and (min-width : 768px){
     .navbar{
         flex-wrap: initial;
@@ -67,22 +73,17 @@ body {
         display: none;
     }
 
-   /*  .estados{
+    .estados{
         visibility: visible;
-        height: 590px;
-    } */
+        height: 570px;
+    }
 
 }
+/* md */
 @media (max-width:767px) and (min-width : 425px){
     .navbar{
         flex-wrap: initial;
     }
-
-   /*  .tituloColapsado{
-        visibility: hidden;
-        width: 0rem;
-        height: 0rem;
-    } */
 
     .estados{
         visibility: hidden;
@@ -91,10 +92,16 @@ body {
         display: none;
     }
 
+    .estadosDrop{
+        visibility: visible;
+        width: auto;
+        height: auto;
+        display: flex ;
+    }
     .dropEstados
     {
         overflow: scroll;
-        height: 55px;
+        height: 55px; 
     }
 
     .dropEstados::-webkit-scrollbar {
@@ -106,21 +113,62 @@ body {
         border-radius: 10px;
         background: rgb(255, 255, 255);
         border: 1px double black;
-}
-}
-@media (max-width:424px) and (min-width : 370px){
-    .navbar{
-        flex-wrap: initial;
-    }
-    .estados{
-        visibility: hidden;
-        width: 0;
-        height: 0;
     }
 
-    /*.tituloColapsado{
-        visibility: hidden;
-        width: 0rem;
-        height: 0rem;
-    } */
+    #TituloComeMex{
+        color: green;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        -webkit-text-stroke: 2px;
+        -webkit-text-stroke-color:white;
+        font-size: 1.5cm;
+    }
+}
+
+/* sm */
+@media (max-width:424px) and (min-width : 370px){
+        .navbar{
+            flex-wrap: initial;
+        }
+    
+        .estados{
+            visibility: hidden;
+            width: 0;
+            height: 0;
+            display: none;
+        }
+    
+        .estadosDrop{
+            visibility: visible;
+            width: auto;
+            height: auto;
+            display: flex ;
+        }
+        .dropEstados
+        {
+            overflow: scroll;
+            height: 55px; 
+        }
+    
+        .dropEstados::-webkit-scrollbar {
+            height: 0;
+            width: 6px;
+            background: rgba(255, 20, 145, 0);
+        }
+        .dropEstados::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background: rgb(255, 255, 255);
+            border: 1px double black;
+        }
+    
+        #TituloComeMex{
+            color: green;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            -webkit-text-stroke: 2px;
+            -webkit-text-stroke-color:white;
+            font-size: 1.5cm;
+        }
+ 
+        .navtitulo{
+            font-size: 30px;
+        }
 }
