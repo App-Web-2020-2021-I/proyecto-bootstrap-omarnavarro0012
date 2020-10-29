@@ -12,6 +12,12 @@ body{
     font-style: italic;
 }
 
+.imagen{
+    border: whitesmoke solid 4px;
+    border-radius: 10px;
+    
+}
+
 .titulo{
     -webkit-text-stroke: 1px;
     -webkit-text-stroke-color: white;
