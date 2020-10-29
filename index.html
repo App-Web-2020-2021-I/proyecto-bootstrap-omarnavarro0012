@@ -14,7 +14,7 @@
     
     
     <!-- NavBar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark font-italic font-weight-bolder" style="height: 1.30cm;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark font-italic font-weight-bolder " style="height: 1.30cm;">
         <a class="navbar-brand" href="index.html">
             <i class="fas fa-pepper-hot"></i>
         </a>
@@ -23,10 +23,10 @@
                 Come-Mexico
             </h1>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </button> -->
+        
             <ul class="navbar-nav mr-auto">
                <!--  <li class="nav-item active">
                     <a class="nav-link" href="#">Home</a>
@@ -71,18 +71,23 @@
                     <button class="btn btn-outline-success my-2 my-sm-0" type="button">Log In</button>
                 </a>
             </form>
-        </div>
+        
     </nav>
     <!-- quitar el borde de la derecha por que se recorre la pantalla. -->
     
     <div class="container-fluid w-100 row mt-1">
         <!-- navegador paises -->
+        
         <div class="estados col-2">
             <nav id="navbar" class="navestados navbar navbar-light">
-                <a class="navbar-brand " href=" # ">
+                <a class="tituloColapsado navbar-brand " href="">
                     <h1 id="tituloEstados" class="display- font-italic">Estados</h1>
                 </a>
-                <nav class="navestados nav nav-pills flex-column ">
+                
+                <button class="botonColapsado btn btn-primary" type="button" data-toggle="collapse" data-target="#estados" aria-expanded="false" aria-controls="collapse">
+                    Estados
+                </button>
+                <nav class="navestados nav nav-pills flex-column collapse" id="estados">
                     <a class="estado nav-link " name="Aguascalientes" href="recetas.html" method="post">Aguascalientes</a>
                     <a class="estado nav-link " name="BajaCa"         href="recetas.html" >Baja California </a>
                     <a class="estado nav-link " name="BajaSur"        href="recetas.html" >Baja California Sur</a>
@@ -126,7 +131,7 @@
                     <h1 id="TituloComeMex" class="display-4 text-lg-center font-italic m-0" >COME MEXICO</h1>
                 </div>
                 <div class="card-body p-0 m-0 ">
-                    <div id="carousel " class="carousel slide " data-ride="carousel">
+                    <div id="carouselImagen" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner" >
                             <div class="carousel-item active" 
                                  data-interval="1000">
@@ -151,28 +156,28 @@
                             <img src="assets\img\Index\5.jpg" 
                             class=" img-responsived-block img-fluid rounded "  
                             alt="... ">
-                        </div>
-                        <div class="carousel-item" 
-                        data-interval="5000">
-                        <img src="assets\img\Index\6.jpg " 
-                        class="img-responsive d-block img-fluid rounded " 
-                        alt="... ">
-                    </div>
+                            </div>
                             <div class="carousel-item" 
-                            data-interval="6000">
-                            <img src="assets\img\Index\7.jpg " 
+                                data-interval="5000">
+                                <img src="assets\img\Index\6.jpg " 
+                                class="img-responsive d-block img-fluid rounded " 
+                                alt="... ">
+                            </div>
+                            <div class="carousel-item" 
+                                    data-interval="6000">
+                                    <img src="assets\img\Index\7.jpg " 
                                         class=" img-responsived-block img-fluid rounded m-l-none " 
                                         alt="... ">
-                                    </div>
-                                    <div class="carousel-item" 
-                                 data-interval="7000">
-                                 <img src="assets\img\Index\8.jpg " 
+                            </div>
+                            <div class="carousel-item" 
+                                data-interval="7000">
+                                <img src="assets\img\Index\8.jpg " 
                                         class=" img-responsived-block img-fluid rounded "  
                                         alt="... ">
                             </div>
                             <div class="carousel-item" 
-                                 data-interval="8000">
-                                 <img src="assets\img\Index\9.jpg " 
+                                data-interval="8000">
+                                <img src="assets\img\Index\9.jpg " 
                                     class="img-responsive d-block img-fluid rounded " 
                                     alt="... ">
                             </div>
@@ -180,13 +185,13 @@
                                 <img src="assets\img\Index\10.jpg " 
                                 class="img-responsive d-block img-fluid rounded " 
                                     alt="... ">
-                                </div>
+                            </div>
                         </div>
-                        <a class="carousel-control-prev m-0 p-0" href="#carousel " role="button " data-slide="prev">
+                        <a class="carousel-control-prev m-0 p-0" href="#carouselImagen " role="button " data-slide="prev">
                             <span class="carousel-control-prev-icon " aria-hidden="true "></span>
                             <span class="sr-only ">Anterior</span>
                         </a>
-                        <a class="carousel-control-next m-0 p-0" href="#carouselInterval " role="button " data-slide="next ">
+                        <a class="carousel-control-next m-0 p-0" href="#carouselImagen" role="button " data-slide="next">
                             <span class="carousel-control-next-icon " aria-hidden="true "></span>
                             <span class="sr-only ">Siguiente</span>
                         </a>
