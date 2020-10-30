@@ -11,3 +11,25 @@ label{
     -webkit-text-stroke: 1px;        
     -webkit-text-stroke-color:#0062FF;
 }
+
+
+/*xl y lg  */
+@media screen and (min-width : 768px){
+    .navbar{
+        flex-wrap: initial;
+    }
+}
+/* md */
+@media (max-width:767px) and (min-width : 425px){
+    .navbar{
+        flex-wrap: initial;
+    }
+
+}
+
+/* sm */
+@media (max-width:424px) and (min-width : 370px){
+    .navbar{
+        flex-wrap: initial;
+    }
+}
