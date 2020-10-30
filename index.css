@@ -101,7 +101,7 @@ body {
     .dropEstados
     {
         overflow: scroll;
-        height: 55px; 
+        height: 200px; 
     }
 
     .dropEstados::-webkit-scrollbar {
@@ -121,6 +121,16 @@ body {
         -webkit-text-stroke: 2px;
         -webkit-text-stroke-color:white;
         font-size: 1.5cm;
+    }
+    .estado{
+        color: #00000073; 
+        font-size: 15px;
+        -webkit-text-stroke: 1px;
+    }
+    
+    .estado:hover{
+        color: deeppink;
+        text-decoration: underline;
     }
 }
 
@@ -146,7 +156,7 @@ body {
         .dropEstados
         {
             overflow: scroll;
-            height: 55px; 
+            height: 200px; 
         }
     
         .dropEstados::-webkit-scrollbar {
@@ -170,5 +180,15 @@ body {
  
         .navtitulo{
             font-size: 30px;
+        }
+        .estado{
+            color: #00000073; 
+            font-size: 15px;
+            -webkit-text-stroke: 1px;
+        }
+        
+        .estado:hover{
+            color: deeppink;
+            text-decoration: underline;
         }
 }
